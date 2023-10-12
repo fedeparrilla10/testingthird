@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import FirstSection from '../components/FirstSection.astro';
+import SecondSection from '../components/SecondSection.astro';
+import FirstVideo from '../components/FirstVideo.astro';
+import SecondVideo from '../components/SecondVideo.astro';
+import BuySection from '../components/BuySection.astro';
+import ThirdVideo from '../components/ThirdVideo.astro';
+import Specifications from '../components/Specifications.astro';
+---
+
+<Layout title="RIG 800 PRO Series">
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
+  >
+    <div class="lg:snap-center">
+      <HeroSection />
+    </div>
+    <div class="lg:snap-center">
+      <FirstSection />
+    </div>
+    <div class="lg:snap-center">
+      <SecondSection />
+    </div>
+    <div class="lg:snap-center">
+      <FirstVideo />
+    </div>
+    <div class="lg:snap-center">
+      <SecondVideo />
+    </div>
+    <div class="lg:snap-center">
+      <ThirdVideo />
+    </div>
+    <div class="lg:snap-center">
+      <Specifications />
+    </div>
+    <div class="lg:snap-center">
+      <BuySection />
+    </div>
+  </main>
+</Layout>

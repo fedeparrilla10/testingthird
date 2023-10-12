@@ -1,0 +1,95 @@
+---
+import LongSection from './LongSection.astro';
+import {
+  buySectionData,
+  buySectionStores,
+  productData,
+} from '../data/buy_section';
+---
+
+<LongSection
+  title="RIG 800 PRO"
+  subtitle="¡Hazte con ellos en tu tienda favorita!"
+  color="white"
+  pt="pt-10"
+  textSize="text-[40px]"
+  id="buysection"
+>
+  <article
+    slot="main"
+    class="text-white flex flex-col xl:flex-row items-center justify-center gap-10 w-screen"
+  >
+    <div
+      class="flex flex-col lg:flex-row justify-around gap-16 xl:gap-24 py-10"
+    >
+      {
+        productData.map((product) => (
+          <div class="flex flex-col items-center justify-center bg-gradient-to-r from-zinc-950 to-zinc-900 rounded-2xl p-5 gap-5">
+            <img src={product.imgSrc} alt={product.title} class="w-72" />
+            <p class="text-xl">{product.title}</p>
+            {product.secondLogoSrc ? (
+              <div class="flex gap-3 flex-row items-center justify-center">
+                <img
+                  src={product.logoSrc}
+                  alt={product.title}
+                  class={product.class}
+                />
+                <span> | </span>
+                <img
+                  src={product.secondLogoSrc}
+                  alt={product.altText}
+                  class={product.class}
+                />
+              </div>
+            ) : (
+              <img
+                src={product.logoSrc}
+                alt={product.title}
+                class={product.class}
+              />
+            )}
+            <div class="flex flex-row gap-10">
+              {buySectionStores.map((store) => (
+                <a href="#" class="flex items-center justify-center gap-2">
+                  <img src={store.src} alt={store.name} class="w-16" />
+                </a>
+              ))}
+            </div>
+            <h3 class="text-xl font-bold tracking-widest">
+              {buySectionData.price}
+            </h3>
+          </div>
+        ))
+      }
+    </div>
+  </article>
+
+  <div slot="footer" class="pb-4 text-white w-3/4">
+    <div
+      class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-5"
+    >
+      <div class="flex flex-row gap-2">
+        <img src="/testingsecond/facebook.svg" alt="" class="w-8 md:w-10" />
+        <img src="/testingsecond/instagram.svg" alt="" class="w-8 md:w-10" />
+        <img src="/testingsecond/x.svg" alt="" class="w-8 md:w-10" />
+        <img src="/testingsecond/youtube.svg" alt="" class="w-8 md:w-10" />
+      </div>
+      <div>
+        <img src="/testingsecond/RIGlogo.webp" class="w-16 md:w-24" />
+      </div>
+    </div>
+
+    <div>
+      <p>
+        Desarrollado por SITELICON ECOMMERCE SERVICES 2023 | Todos los derechos
+        reservados.
+      </p>
+    </div>
+  </div>
+
+  <img
+    slot="background"
+    src={buySectionData.background}
+    class="object-center object-cover h-full w-full"
+  />
+</LongSection>

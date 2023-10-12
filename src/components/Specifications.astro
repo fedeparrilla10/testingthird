@@ -1,0 +1,77 @@
+---
+import LongSection from './LongSection.astro';
+import { firstTable, secondTable } from '../data/specifications.js';
+---
+
+<LongSection
+  title="ESPECIFICACIONES"
+  subtitle="Detalles técnicos"
+  color="white"
+  pt="pt-10"
+  textSize="text-[40px]"
+>
+  <article
+    slot="main"
+    class="text-white flex flex-col items-center justify-center gap-10 w-screen"
+  >
+    <div
+      class="flex justify-around flex-wrap gap-5 text-gray-200 text-md xl:text-lg p-10"
+    >
+      <div class="table-1">
+        <table class="table-auto">
+          <tbody>
+            {
+              firstTable.map((table) => {
+                return (
+                  <tr>
+                    <td class="border border-zinc-700 p-1 2xl:p-2 font-bold max-w-sm max-h-2xl">
+                      {table.title}
+                    </td>
+                    <td class="border border-zinc-700 p-1 2xl:p-2 max-w-sm max-h-2xl">
+                      {table.description}
+                    </td>
+                  </tr>
+                );
+              })
+            }
+          </tbody>
+        </table>
+      </div>
+      <div class="table-2">
+        <table class="table-auto">
+          <tbody>
+            {
+              secondTable.map((table) => {
+                return (
+                  <tr>
+                    <td class="border border-zinc-700 p-1 2xl:p-2 font-bold max-w-sm max-h-2xl">
+                      {table.title}
+                    </td>
+                    <td class="border border-zinc-700 p-1 2xl:p-2 max-w-sm max-h-2xl">
+                      {table.description}
+                    </td>
+                  </tr>
+                );
+              })
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </article>
+
+  <div slot="footer" class="pb-10">
+    <a
+      class="border-[3px] backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+      href="#buysection"
+    >
+      COMPRAR AHORA</a
+    >
+  </div>
+
+  <img
+    slot="background"
+    src="/testingsecond/specifs.png"
+    class="object-center object-cover h-full w-full"
+  />
+</LongSection>

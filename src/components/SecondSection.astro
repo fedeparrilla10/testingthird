@@ -1,0 +1,47 @@
+---
+import Section from './Section.astro';
+import { secondSectionData } from '../data/second_section.js';
+---
+
+<Section color="white">
+  <article
+    slot="main"
+    class="text-gray-200 flex flex-col items-center justify-center"
+  >
+    <div
+      class="flex flex-col xl:flex-row items-center justify-center w-4/5 xl:w-3/4 gap-12"
+    >
+      <div
+        class="flex flex-col gap-4 2xl:gap-12 order-2 max-w-6xl justify-center items-center xl:pt-12"
+      >
+        {
+          secondSectionData.map((eachColumn) => {
+            return (
+              <div class="flex flex-col gap-2 xl:gap-4">
+                <h2 class="text-[30px] xl:text-[40px] font-bold tracking-widest text-gray-100">
+                  {eachColumn.title}
+                </h2>
+                <p class="2xl:text-xl">{eachColumn.description}</p>
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
+  </article>
+
+  <div slot="footer" class="pb-10">
+    <a
+      class="border-[3px] backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+      href="#"
+    >
+      COMPRAR AHORA</a
+    >
+  </div>
+
+  <img
+    slot="background"
+    src="/testingsecond/bgrig800.png"
+    class="object-center object-cover h-full w-full"
+  />
+</Section>
