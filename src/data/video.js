@@ -1,20 +1,20 @@
 export const videoData = [
   {
-    title: 'Máxima Comodidad',
+    title: 'Autonomía TOTAL',
     description:
-      'La diadema es increíblemente resistente y flexible, pese a ser una de las más ligeras de su categoría. Y todo combinado con el inconfundible diseño limpio y adaptado al juego de élite que caracteriza a RIG.',
-    src: '/testingsecond/headbandvid.mp4',
+      'Hasta 24 horas de autonomía mediante Bluetooth y hasta 18 horas de autonomía con el adaptador USB-C (inalámbrico). Disfruta de una experiencia de juego ininterrumpida con una sola carga.',
+    src: '/testingthird/24hs.mp4',
   },
   {
-    title: 'ZERO LAG',
+    title: 'Personalización Máxima',
     description:
-      'Experimenta cero lag y una reducción de interferencias gracias a una potente conexión de radiofrecuencia dedicada de 2.4 GHz.',
-    src: '/testingsecond/zerolagvid.mp4',
+      'Descarga la aplicación 600 PRO Navigator para aprovechar al máximo las funciones avanzadas, incluyendo preajustes para configurar el sonido, los niveles del micrófono y mucho más.',
+    src: '/testingthird/app.mp4',
   },
   {
     title: 'Virtualmente Indestructibles',
     description:
-      'Las almohadillas del RIG 800 PRO están diseñadas para separarse fácilmente de la diadema cuando se ejerce presión, evitando así posibles roturas.',
-    src: '/testingsecond/notbreakvid.mp4',
+      'El ligero 600 PRO cuenta con auriculares de ajuste rápido recubiertos de tela transpirable y una diadema acolchada prácticamente irrompible, incluso torciéndola vigorosamente.',
+    src: '/testingthird/unbreakable.mp4',
   },
 ];

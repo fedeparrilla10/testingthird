@@ -1,19 +1,19 @@
 export const secondSectionData = [
   {
-    title: 'AJUSTADO PARA EL GAMING',
+    title: 'SONIDO DE ALTA PRECISIÓN',
     description:
-      'Dentro del 800 PRO encontrará controladores de baja distorsión, cámaras acústicas aisladas y resonadores de tubo bajo. Todo diseñado para mejorar tu experiencia de juego.',
+      'Los altavoces de 40 mm de gran sensibilidad, reforzados con potentes bajos, ofrecen un sonido magníficamente equilibrado y sin distorsión, incluso a volúmenes elevados.',
   },
   {
-    title: '24H SIN PARAR',
+    title: 'MÁXIMA COMODIDAD',
     description:
-      'Con una impresionante duración de la batería, el 800 PRO te permite mantenerte en el juego sin interrupciones, y gracias a la nueva estación base, siempre estará listo para tu próxima sesión.',
+      'Los auriculares inalámbricos ultraligeros (240 g) ofrecen una total comodidad durante las sesiones de juego prolongadas, junto con 24 horas de autonomía mediante Bluetooth y hasta 18 horas con el adaptador USB-C (inalámbrico).',
   },
 ];
 
 export const secondSectionImg = [
   {
-    src: '/testingsecond/gamingdesigned.webp',
+    src: '/testingthird/gamingdesigned.webp',
     alt: 'RIG 800 PRO',
   },
 ];

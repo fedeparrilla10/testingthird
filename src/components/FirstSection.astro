@@ -4,8 +4,8 @@ import { firstSectionData } from '../data/first_section';
 ---
 
 <LongSection
-  title="LA EXPERIENCIA DEFINITIVA"
-  subtitle="Vive un nuevo nivel de inmersión acústica"
+  title="TOTALMENTE VERSÁTIL"
+  subtitle="PS5 o XBOX + PC, Nintendo Switch & Smartphone"
   color="white"
   pt="pt-5 xl:pt-20"
   textSize="text-[36px] xl:text-[40px]"
@@ -18,7 +18,7 @@ import { firstSectionData } from '../data/first_section';
       {
         firstSectionData.map((product) => (
           <div class="flex flex-col items-center justify-center gap-2">
-            <img src={product.img} alt={product.title} />
+            <img src={product.img} alt={product.title} class="w-48 h-96" />
             <p class="text-xl">{product.title}</p>
             {product.extraIcon ? (
               <div class="flex gap-3 flex-row items-center justify-center">
@@ -56,9 +56,9 @@ import { firstSectionData } from '../data/first_section';
     >
   </div>
 
-  <div
+  <img
     slot="background"
-    class="bg-gradient-to-r from-zinc-950 to-zinc-900 object-center object-cover h-full w-full"
-  >
-  </div>
+    src="/testingthird/bgfirstsection.png"
+    class="object-center object-cover h-full w-full"
+  />
 </LongSection>

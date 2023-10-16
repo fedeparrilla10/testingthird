@@ -1,6 +1,5 @@
 ---
 import Section from './Section.astro';
-import Button from './Button.astro';
 import { videoData } from '../data/video';
 ---
 
@@ -26,6 +25,7 @@ import { videoData } from '../data/video';
         loop
         autoplay
         muted
+        playsinline
         src={videoData[0].src}
         class="w:1/2 md:w-4/5 lg:w-2/4 rounded-3xl"></video>
     </div>
