@@ -1,17 +1,20 @@
 export const specsImgs = [
   {
     id: 1,
-    name: 'Software',
+    name: 'APP Propia',
+    subtitle: '(Disponible en App Store & Google Play)',
     img: '/testingthird/software.svg',
   },
   {
     id: 2,
-    name: 'Batería 24+18H',
+    name: 'Batería 24 / 18H',
+    subtitle: '(En función de la conexión)',
     img: '/testingthird/battery.svg',
   },
   {
     id: 3,
-    name: 'Inalambrico',
+    name: 'Inalambricos',
+    subtitle: '(Modo dual disponible)',
     img: '/testingthird/wireless.svg',
   },
 ];
@@ -23,15 +26,11 @@ export const firstTable = [
   },
   {
     title: 'Color',
-    description: 'Negro / Arctic Camo / Urban Camo',
+    description: 'Negro',
   },
   {
     title: 'Peso',
     description: '240 g',
-  },
-  {
-    title: 'Inalámbrico',
-    description: 'Sí',
   },
   {
     title: 'Fecha de Lanzamiento',
@@ -57,20 +56,28 @@ export const firstTable = [
 
 export const secondTable = [
   {
-    title: 'Compatibilidad',
-    description: 'Windows/PS5/XBOX/Nintendo Switch/Android/iOS',
+    title: 'Inalámbrico',
+    description: 'Sí',
+  },
+  {
+    title: 'Compatibilidad HS',
+    description: 'PS5/PS4/Switch/PC/Tablet/Mobile',
+  },
+  {
+    title: 'Compatibilidad HX',
+    description: 'XBOX X-S/XBOX One/PC/Mobile',
   },
   {
     title: 'Frecuencia de respuesta del micrófono',
     description: '100 Hz - 10 kHz',
   },
   {
-    title: 'Micrófono extraíble',
+    title: 'Micrófono plegable',
     description: 'Sí',
   },
   {
     title: 'Tipo de conexión',
-    description: 'Bluetooth USB dongle & Detachable USB-C/USB cable',
+    description: 'Dongle USB C & Bluetooth',
   },
   {
     title: 'Control de volumen',
@@ -78,6 +85,6 @@ export const secondTable = [
   },
   {
     title: 'Duración de la batería',
-    description: '24h+18h',
+    description: '24h / 18h',
   },
 ];

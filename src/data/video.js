@@ -17,4 +17,10 @@ export const videoData = [
       'El ligero 600 PRO cuenta con auriculares de ajuste rápido recubiertos de tela transpirable y una diadema acolchada prácticamente irrompible, incluso torciéndola vigorosamente.',
     src: '/testingthird/unbreakable.mp4',
   },
+  {
+    title: 'Micrófono Integrable',
+    description:
+      'Tu voz llegará alta y clara en todas las situaciones gracias a la tecnología antirruido. El discreto micrófono se silencia de forma automática al plegarlo.',
+    src: '/testingthird/microfono.mp4',
+  },
 ];

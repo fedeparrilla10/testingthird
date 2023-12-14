@@ -18,13 +18,16 @@ import { firstTable, secondTable, specsImgs } from '../data/specifications.js';
       {
         specsImgs.map((spec) => {
           return (
-            <div class="flex flex-col justify-center items-center gap-5">
+            <div class="flex flex-col justify-center items-center gap-5 w-full">
               <img
                 src={spec.img}
                 alt={spec.name}
                 class="w-20 h-14 md:w-16 md:h-12"
               />
-              <p class="text-md font-semibold">{spec.name}</p>
+              <div>
+                <p class="text-md font-semibold">{spec.name}</p>
+                {spec.subtitle && <p class="text-sm">{spec.subtitle}</p>}
+              </div>
             </div>
           );
         })
@@ -32,7 +35,7 @@ import { firstTable, secondTable, specsImgs } from '../data/specifications.js';
     </div>
 
     <div
-      class="flex justify-around flex-wrap items-center gap-5 text-black text-md xl:text-lg p-10"
+      class="flex justify-around flex-wrap items-center gap-5 text-black text-md xl:text-[16px] p-10"
     >
       <div class="table-1">
         <table class="table-auto">
@@ -44,7 +47,7 @@ import { firstTable, secondTable, specsImgs } from '../data/specifications.js';
                     <td class="border border-zinc-700 p-1 2xl:p-2 font-bold max-w-sm max-h-2xl">
                       {table.title}
                     </td>
-                    <td class="border border-zinc-700 p-1 2xl:p-2 max-w-sm max-h-2xl">
+                    <td class="border border-zinc-700 p-1 2xl:p-2 max-w-sm max-h-2xl text-md">
                       {table.description}
                     </td>
                   </tr>
